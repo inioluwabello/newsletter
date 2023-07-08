@@ -8,6 +8,12 @@ const FormSection = ({styles, email, setEmail, setShowingSuccess}) => {
   };
   const handleSubmitForm = (e) => {
     e.preventDefault();
+    
+    if (!validateEmail(email)) {
+      setEmailError(true);
+      return false;
+    }
+
     setShowingSuccess(true);
   };
 

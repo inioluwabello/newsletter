@@ -5,7 +5,7 @@ import PageIllustrationMobile from "./PageIllustrationMobile";
 const MobileView = ({ styles, email, setEmail, setShowingSuccess }) => {
 
   return (
-    <div className={styles.mobileContent}>
+    <main className={styles.mobileContent}>
       <PageIllustrationMobile />
 
       <div style={{ paddingLeft: "3rem", paddingRight: "3rem" }}>
@@ -17,7 +17,7 @@ const MobileView = ({ styles, email, setEmail, setShowingSuccess }) => {
           setShowingSuccess={setShowingSuccess}
         />
       </div>
-    </div>
+    </main>
   );
 };
 

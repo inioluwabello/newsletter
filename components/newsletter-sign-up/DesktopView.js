@@ -5,7 +5,7 @@ const DesktopView = ({ styles, email, setEmail, showingSuccess, setShowingSucces
   const rootAssets = "/assets/";
 
   return (
-    <div className={styles.content}>
+    <main className={styles.content}>
       <div className="row">
         <div className={`col`}>
           <div style={{ paddingLeft: "3rem", paddingRight: "3rem" }}>
@@ -22,7 +22,7 @@ const DesktopView = ({ styles, email, setEmail, showingSuccess, setShowingSucces
           <img src={`${rootAssets}images/illustration-sign-up-desktop.svg`} />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
